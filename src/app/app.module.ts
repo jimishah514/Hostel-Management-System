@@ -8,12 +8,12 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { DatePipe } from '@angular/common';
 
 import { AppComponent } from './app.component';
-import { EntriesComponent } from './employees/entries.component';
-import { EntryComponent } from './employees/entry/entry.component';
+import { EntriesComponent } from './entries/entries.component';
+import { EntryComponent } from './entries/entry/entry.component';
 import { EntryService } from './shared/entry.service';
 import { environment } from '../environments/environment';
 import { RoomsService } from './shared/rooms.service';
-import { EntryListComponent } from './employees/entry-list/entry-list.component';
+import { EntryListComponent } from './entries/entry-list/entry-list.component';
 
 @NgModule({
   declarations: [
