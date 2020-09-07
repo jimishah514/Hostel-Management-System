@@ -15,19 +15,31 @@
       <mat-header-cell *matHeaderCellDef  mat-sort-header>Full Name</mat-header-cell>
       <mat-cell *matCellDef="let element">{{element.fullName}}</mat-cell>
     </ng-container>
+    <ng-container matColumnDef="fatherName">
+      <mat-header-cell *matHeaderCellDef  mat-sort-header>Father Name</mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.fatherName}}</mat-cell>
+    </ng-container>
     <ng-container matColumnDef="email">
       <mat-header-cell *matHeaderCellDef  mat-sort-header>Email</mat-header-cell>
       <mat-cell *matCellDef="let element">{{element.email}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="cnic">
+      <mat-header-cell *matHeaderCellDef  mat-sort-header>CNIC</mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.cnic}}</mat-cell>
     </ng-container>
     <ng-container matColumnDef="mobile">
       <mat-header-cell *matHeaderCellDef mat-sort-header>Mobile</mat-header-cell>
       <mat-cell *matCellDef="let element">{{element.mobile}}</mat-cell>
     </ng-container>
+    <ng-container matColumnDef="secondarymobile">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Secondary Mobile</mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.secondarymobile}}</mat-cell>
+    </ng-container>
     <ng-container matColumnDef="city">
       <mat-header-cell *matHeaderCellDef mat-sort-header>City</mat-header-cell>
       <mat-cell *matCellDef="let element">{{element.city}}</mat-cell>
     </ng-container>
-    <ng-container matColumnDef="departmentName">
+    <ng-container matColumnDef="roomNo">
       <mat-header-cell *matHeaderCellDef mat-sort-header>RoomNo</mat-header-cell>
       <mat-cell *matCellDef="let element">{{element.roomNo}}</mat-cell>
     </ng-container>

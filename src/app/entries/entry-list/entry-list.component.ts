@@ -19,7 +19,7 @@ export class EntryListComponent implements OnInit {
     private notificationService: NotificationService) { }
 
   listData: MatTableDataSource<any>;
-  displayedColumns: string[] = ['fullName', 'email', 'mobile', 'city', 'departmentName', 'actions'];
+  displayedColumns: string[] = ['fullName', 'fatherName', 'cnic', 'email', 'mobile', 'secondarymobile', 'city', 'roomNo', 'actions'];
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   searchKey: string;
@@ -28,10 +28,8 @@ export class EntryListComponent implements OnInit {
     this.service.getEntries().subscribe(
       list => {
         let array = list.map(item => {
-          let departmentName = "this.departmentService.array";
           return {
             $key: item.key,
-            departmentName,
             ...item.payload.val()
           };
         });
